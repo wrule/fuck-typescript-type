@@ -1,0 +1,14 @@
+{
+  "name": "fuck-typescript-type",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node dist/index.js",
+    "watch": "tsc -w",
+    "build": "tsc"
+  },
+  "repository": "https://github.com/wrule/fuck-typescript-type",
+  "author": "鸡毛 <shihao.gu@perfma.com>",
+  "license": "MIT",
+  "private": false
+}
