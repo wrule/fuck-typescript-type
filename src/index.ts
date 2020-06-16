@@ -10,10 +10,17 @@ function func() {
   };
 }
 
-const item = (false as true) && func();
-type type1 = typeof item.object[1000];
-const kk = (false as true) && ({} as type1).name;
-type type2 = typeof kk;
-const a: type2 = '123455678';
+interface b {
+  age: number,
+  sex: boolean,
+}
 
-console.log(a.slice(0, 4));
+interface a {
+  name: string,
+  meta: b,
+}
+
+const func1 = () => ({} as a).meta.age;
+type type1 = ReturnType<typeof func1>;
+
+const aa: type1 = 123;
